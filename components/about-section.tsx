@@ -54,7 +54,7 @@ export function AboutSection() {
               <div className="mt-4 bg-gray-800 p-8 rounded-lg border border-purple-900/20">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <div className="w-52 h-52 bg-black rounded-full p-2 mx-auto mb-4">
+                    <div className="w-52 h-52 bg-white rounded-full p-2 mx-auto mb-4">
                       <img
                         src="/morenex founder.png"
                         alt="Founder of Morenex"
