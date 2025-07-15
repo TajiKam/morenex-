@@ -19,8 +19,15 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-purple-900/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-bold text-white">
-            MORENEX <span className="text-purple-400">VIRTUAL SOLUTIONS</span>
+          <div className="flex items-center space-x-3">
+            <img
+              src="/morenex logo.png"
+              alt="Morenex Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <div className="text-xl font-bold text-white">
+              MORENEX <span className="text-purple-400">VIRTUAL SOLUTIONS</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
