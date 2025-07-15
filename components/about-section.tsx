@@ -23,8 +23,8 @@ export function AboutSection() {
 
             <p>
               We specialize in supporting e-commerce store owners with the backend systems that drive real growth. From
-              done-for-you Shopify and WordPress store setups to email marketing automation, virtual assistance, website
-              optimization and customized packages...we handle the heavy lifting behind the scenes so you don't have to.
+              done-for-you Shopify setups to custom websites on your platform of choice to email marketing automation, virtual assistance, website
+              optimization and customized packages—we handle the heavy lifting behind the scenes so you don't have to.
             </p>
 
             <p className="text-xl font-semibold text-purple-300 text-center">
