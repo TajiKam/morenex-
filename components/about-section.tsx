@@ -13,7 +13,7 @@ export function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
             About <span className="text-purple-400">Morenex Virtual Solutions</span>
           </h2>
-          </div>
+          
           <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
             <p>
               Running an e-commerce store is exciting but also overwhelming. Between product uploads, managing
@@ -52,11 +52,12 @@ export function AboutSection() {
             {isFounderOpen && (
               <div className="mt-4 bg-gray-800 p-8 rounded-lg border border-purple-900/20">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <img
-                    src="/morenexfounder.png"
-                    alt="Founder of Morenex"
-                    className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
-                  />
+                  <div>
+                    <img
+                      src="/morenexfounder.png"
+                      alt="Founder of Morenex"
+                      className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
+                    />
                   </div>
 
                   <div className="space-y-4 text-gray-300 leading-relaxed">
