@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -42,7 +43,7 @@ export function AboutSection() {
               <h3 className="text-2xl font-bold text-white">
                 Meet the <span className="text-purple-400">Founder</span>
               </h3>
-             {isFounderOpen ? (
+              {isFounderOpen ? (
                 <ChevronUp className="w-6 h-6 text-purple-400" />
               ) : (
                 <ChevronDown className="w-6 h-6 text-purple-400" />
