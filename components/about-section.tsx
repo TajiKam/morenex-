@@ -56,7 +56,7 @@ export function AboutSection() {
                     <img
                       src="/morenex founder.png"
                       alt="Founder of Morenex"
-                      className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
+                      className="w-48 h-48 object-cover object-top rounded-full mx-auto mb-4"
                     />
                   </div>
 
