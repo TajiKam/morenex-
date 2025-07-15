@@ -93,19 +93,19 @@ export function Navigation() {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection("testimonials")}
-                className="text-gray-300 hover:text-white transition-colors text-left"
-              >
-                Testimonials
-              </button>
-              <button
                 onClick={() => scrollToSection("why-us")}
                 className="text-gray-300 hover:text-white transition-colors text-left"
               >
                 Why Us
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+                </button>
+                <button
+                  onClick={() => scrollToSection("testimonials")}
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                Testimonials
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
                 className="text-gray-300 hover:text-white transition-colors text-left"
               >
                 Contact

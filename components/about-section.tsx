@@ -13,7 +13,7 @@ export function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
             About <span className="text-purple-400">Morenex Virtual Solutions</span>
           </h2>
-
+          </div>
           <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
             <p>
               Running an e-commerce store is exciting but also overwhelming. Between product uploads, managing
@@ -42,7 +42,7 @@ export function AboutSection() {
               <h3 className="text-2xl font-bold text-white">
                 Meet the <span className="text-purple-400">Founder</span>
               </h3>
-              {isFounderOpen ? (
+             {isFounderOpen ? (
                 <ChevronUp className="w-6 h-6 text-purple-400" />
               ) : (
                 <ChevronDown className="w-6 h-6 text-purple-400" />
@@ -52,15 +52,16 @@ export function AboutSection() {
             {isFounderOpen && (
               <div className="mt-4 bg-gray-800 p-8 rounded-lg border border-purple-900/20">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="text-center">
-                    <div className="w-48 h-48 mx-auto bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mb-4">
-                      <span className="text-5xl font-bold text-white">M</span>
-                    </div>
+                  <img
+                    src="/morenexfounder.png"
+                    alt="Founder of Morenex"
+                    className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
+                  />
                   </div>
 
                   <div className="space-y-4 text-gray-300 leading-relaxed">
                     <p>
-                      <strong className="text-purple-300">Hi, I'm Moureen</strong> -- your behind the scenes powerhouse.
+                      <strong className="text-purple-300">Hi, I'm Moureen</strong> ; your behind the scenes powerhouse.
                       I'm the one you call when you're tired of juggling backend tasks, overwhelmed with marketing and
                       ready to finally scale your business with systems that work.
                     </p>
@@ -68,14 +69,14 @@ export function AboutSection() {
                     <p>
                       I have a background in Sociology and Economics, but my real education came from navigating life
                       with the grit of someone constantly in survival mode. In that chapter of my life, I started
-                      teaching myself digital skills out of necessity -- I wanted freedom, income and a way to build
+                      teaching myself digital skills out of necessity - I wanted freedom, income and a way to build
                       something bigger than just making it through the day.
                     </p>
 
                     <p>
                       That's how I discovered the world of eCommerce and I fell in love with the systems behind
                       successful online businesses. I quickly realized just how stressed and stretched most business
-                      owners were trying to do it all alone. That's when it clicked -- I could be the strategic support
+                      owners were trying to do it all alone. That's when it clicked ; I could be the strategic support
                       they didn't even know they needed.
                     </p>
 

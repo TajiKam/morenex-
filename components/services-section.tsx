@@ -16,9 +16,9 @@ export function ServicesSection() {
     },
     {
       icon: Globe,
-      title: "Done-for-You Shopify/WordPress Setups",
+      title: "Done-for-You Store Setup",
       description:
-        "Store creation from scratch, domain & payment setup, mobile responsiveness, app/plugin integrations, handover with training",
+        "Customized e-commerce website creation from scratch, tailored to your brand for clarity,conversion and growth. Domain & payment setup, mobile responsiveness, app/plugin integrations, handover with training",
     },
     {
       icon: Zap,

@@ -90,10 +90,10 @@ export function ContactSection() {
                 <SelectContent className="bg-gray-900 border-gray-700">
                   <SelectItem value="email-marketing">Email Marketing & Automation</SelectItem>
                   <SelectItem value="virtual-assistance">E-commerce Virtual Assistance</SelectItem>
-                  <SelectItem value="store-setup">Store Setup (Shopify/WordPress)</SelectItem>
+                  <SelectItem value="store-setup">Done-for-You Store Setup</SelectItem>
                   <SelectItem value="optimization">Website Optimization & Redesign</SelectItem>
                   <SelectItem value="custom-package">Customized Package</SelectItem>
-                  <SelectItem value="consultation">Free Consultation</SelectItem>
+                  <SelectItem value="consultation">Consultation</SelectItem>
                 </SelectContent>
               </Select>
             </div>
