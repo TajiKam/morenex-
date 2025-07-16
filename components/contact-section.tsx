@@ -1,31 +1,10 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    website: "",
-    service: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
-  }
 
   return (
     <section id="contact" className="py-20 bg-black">
@@ -35,7 +14,7 @@ export function ContactSection() {
         </h2>
 
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form method="POST" action="https://formspree.io/f/mjkovlrl" className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -43,10 +22,9 @@ export function ContactSection() {
                 </label>
                 <Input
                   id="name"
+                  name="name"
                   type="text"
                   required
-                  value={formData.name}
-                  onChange={(e) => handleInputChange("name", e.target.value)}
                   className="bg-gray-900 border-gray-700 text-white focus:border-purple-500"
                 />
               </div>
@@ -57,10 +35,9 @@ export function ContactSection() {
                 </label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   required
-                  value={formData.email}
-                  onChange={(e) => handleInputChange("email", e.target.value)}
                   className="bg-gray-900 border-gray-700 text-white focus:border-purple-500"
                 />
               </div>
@@ -72,9 +49,8 @@ export function ContactSection() {
               </label>
               <Input
                 id="website"
+                name="website"
                 type="url"
-                value={formData.website}
-                onChange={(e) => handleInputChange("website", e.target.value)}
                 className="bg-gray-900 border-gray-700 text-white focus:border-purple-500"
               />
             </div>
@@ -83,19 +59,20 @@ export function ContactSection() {
               <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-2">
                 What do you need help with? *
               </label>
-              <Select onValueChange={(value) => handleInputChange("service", value)}>
-                <SelectTrigger className="bg-gray-900 border-gray-700 text-white focus:border-purple-500">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent className="bg-gray-900 border-gray-700">
-                  <SelectItem value="email-marketing">Email Marketing & Automation</SelectItem>
-                  <SelectItem value="virtual-assistance">E-commerce Virtual Assistance</SelectItem>
-                  <SelectItem value="store-setup">Done-for-You Store Setup</SelectItem>
-                  <SelectItem value="optimization">Website Optimization & Redesign</SelectItem>
-                  <SelectItem value="custom-package">Customized Package</SelectItem>
-                  <SelectItem value="consultation">Consultation</SelectItem>
-                </SelectContent>
-              </Select>
+              <select
+                id="service"
+                name="service"
+                required
+                className="w-full bg-gray-900 border border-gray-700 text-white rounded-md px-3 py-2 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
+              >
+                <option value="">Select a service</option>
+                <option value="email-marketing">Email Marketing & Automation</option>
+                <option value="virtual-assistance">E-commerce Virtual Assistance</option>
+                <option value="store-setup">Done-for-You Store Setup</option>
+                <option value="optimization">Website Optimization & Redesign</option>
+                <option value="custom-package">Customized Package</option>
+                <option value="consultation">Consultation</option>
+              </select>
             </div>
 
             <div>
@@ -104,9 +81,8 @@ export function ContactSection() {
               </label>
               <Textarea
                 id="message"
+                name="message"
                 rows={5}
-                value={formData.message}
-                onChange={(e) => handleInputChange("message", e.target.value)}
                 className="bg-gray-900 border-gray-700 text-white focus:border-purple-500"
                 placeholder="Tell us about your project and goals..."
               />
