@@ -20,13 +20,11 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-br from-purple-900/30 to-gray-800/50 p-2 rounded-lg border border-purple-500/20">
-              <img
-                src="/morenex logo.png"
-                alt="Morenex Logo"
-                className="h-12 w-12 object-contain"
-              />
-            </div>
+            <img
+              src="/morenex logo.png"
+              alt="Morenex Logo"
+              className="h-16 w-16 object-contain"
+            />
             <div className="text-xl font-bold text-white">
               MORENEX <span className="text-purple-400">VIRTUAL SOLUTIONS</span>
             </div>
@@ -70,7 +68,12 @@ export function Navigation() {
             >
               Contact
             </button>
-            <Button className="bg-purple-600 hover:bg-purple-700">Book a Call</Button>
+            <Button 
+              className="bg-purple-600 hover:bg-purple-700"
+              onClick={() => scrollToSection("contact")}
+            >
+              Book a Call
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -119,7 +122,12 @@ export function Navigation() {
               >
                 Contact
               </button>
-              <Button className="bg-purple-600 hover:bg-purple-700 w-fit">Book a Call</Button>
+              <Button 
+                className="bg-purple-600 hover:bg-purple-700 w-fit"
+                onClick={() => scrollToSection("contact")}
+              >
+                Book a Call
+              </Button>
             </div>
           </div>
         )}
